@@ -57,3 +57,16 @@ body {
   border: none;
   padding: 10px;
 }
+.new-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2a2a2a;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.new-card:hover {
+  opacity: 1;
+  background: #3a3a3a;
+}

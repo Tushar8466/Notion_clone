@@ -3,7 +3,7 @@ function Sidebar({ pages, setPages, setCurrentPage }) {
   const addPage = () => {
     const newPage = {
       id: Date.now(),
-      title: "Untitled",
+      title: "New Page",
       content: ""
     };
 

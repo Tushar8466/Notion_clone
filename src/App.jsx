@@ -20,7 +20,11 @@ function App() {
         {currentPage ? (
           <Editor page={currentPage} />
         ) : (
-          <Home />
+          <Home 
+            page={currentPage}
+            pages={pages}
+            setPages={setPages}
+            setCurrentPage={setCurrentPage}/>
         )}
       </div>
     </div>
