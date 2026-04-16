@@ -2,7 +2,7 @@
 
 Scribo is a premium, high-performance workspace clone inspired by Notion. It features a cinematic dark-themed interface, glassmorphic UI components, and fluid WebGL-powered animations.
 
-![Project Preview](https://via.placeholder.com/1200x600?text=Scribo+Cinematic+Workspace)
+![Project Preview](notion-clone-murex-phi.vercel.app/)
 
 ## ✨ Features
 
