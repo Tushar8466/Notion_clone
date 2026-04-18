@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Sidebar from '../components/pages/sidebar'
-import Editor from '../components/pages/editor'
+import Sidebar from './pages/sidebar'
+import Editor from './pages/editor'
 import './Dashboard.css'
 
 function Dashboard() {
@@ -19,9 +19,10 @@ function Dashboard() {
       />
 
       <Editor 
-        currentPage={currentPage} 
+        page={currentPage} 
         setPages={setPages} 
         pages={pages} 
+        setCurrentPage={setCurrentPage}
       />
     </div>
   )

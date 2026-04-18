@@ -2,6 +2,7 @@ import React from 'react'
 import LineWaves from './components/Hero'
 import Navbar from './components/ui/Navbar'
 import SpotlightCard from './components/ui/CardProps'
+import GlareHover from './components/ui/GlareHover'
 import './index.css'
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import Login from './components/pages/login' 
@@ -42,28 +43,37 @@ function Home() {
         </div>
       </div>
 
-      {/* Features */}
+      {/* Features Section */}
       <div className="features-header">
-        <span>Why Scribo?</span>
-        <h2>Everything you need.<br />Nothing you don't.</h2>
-        <p>A workspace that adapts to how you think.</p>
+        <span className="features-eyebrow">Why Scribo?</span>
+        <h2 className="features-heading">Everything you need.<br />Nothing you don't.</h2>
+        <p className="features-subtext">A workspace that adapts to how you think — not the other way around.</p>
       </div>
 
       <section className="features-section">
-        <SpotlightCard className="feature-card">
-          <div>✍️</div>
-          <h3>Write Anything</h3>
-        </SpotlightCard>
+        <GlareHover glareOpacity={0.15}>
+          <SpotlightCard spotlightColor="rgba(0, 229, 255, 0.2)" className="feature-card">
+            <div className="feature-icon">✍️</div>
+            <h3 className="feature-title">Write Anything</h3>
+            <p className="feature-desc">From quick notes to full docs — a flexible editor that gets out of your way.</p>
+          </SpotlightCard>
+        </GlareHover>
 
-        <SpotlightCard className="feature-card">
-          <div>🗂️</div>
-          <h3>Organize</h3>
-        </SpotlightCard>
+        <GlareHover glareOpacity={0.15}>
+          <SpotlightCard spotlightColor="rgba(120, 80, 255, 0.25)" className="feature-card">
+            <div className="feature-icon">🗂️</div>
+            <h3 className="feature-title">Organize Effortlessly</h3>
+            <p className="feature-desc">Nested pages, databases, and tags keep every idea exactly where you expect it.</p>
+          </SpotlightCard>
+        </GlareHover>
 
-        <SpotlightCard className="feature-card">
-          <div>⚡</div>
-          <h3>Fast</h3>
-        </SpotlightCard>
+        <GlareHover glareOpacity={0.15}>
+          <SpotlightCard spotlightColor="rgba(255, 100, 150, 0.2)" className="feature-card">
+            <div className="feature-icon">⚡</div>
+            <h3 className="feature-title">Move at the Speed of Thought</h3>
+            <p className="feature-desc">Slash commands, keyboard shortcuts, and instant search keep you in flow.</p>
+          </SpotlightCard>
+        </GlareHover>
       </section>
     </>
   )
