@@ -43,6 +43,26 @@
   transform: translateY(-1px);
 }
 
+.github-star-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.github-star-btn:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.star-icon {
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
   .navbar-container {
     width: 90%;
