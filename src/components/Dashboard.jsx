@@ -5,7 +5,7 @@ import './Dashboard.css'
 
 function Dashboard() {
   const [pages, setPages] = useState([
-    { id: 1, title: 'Untitled', content: '' }
+    { id: 1, title: 'Untitled', content: [''] }
   ])
 
   const [currentPage, setCurrentPage] = useState(pages[0])
@@ -16,6 +16,7 @@ function Dashboard() {
         pages={pages} 
         setPages={setPages} 
         setCurrentPage={setCurrentPage} 
+        currentPage={currentPage}
       />
 
       <Editor 

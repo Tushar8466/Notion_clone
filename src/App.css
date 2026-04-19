@@ -11,88 +11,15 @@ body {
   color: #ffffff;
 }
 
-.sidebar {
-  width: 280px;
-  background: rgba(10, 10, 10, 0.8);
-  backdrop-filter: blur(20px);
-  padding: 2rem 1.5rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
+/* ================= DASHBOARD ================= */
+.dashboard {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  background: #000000;
+  color: #ffffff;
 }
 
-.sidebar-header {
-  margin-bottom: 2rem;
-}
-
-.home-link {
-  display: block;
-  color: rgba(255, 255, 255, 0.4);
-  text-decoration: none;
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
-  transition: color 0.2s ease;
-}
-
-.home-link:hover {
-  color: #fff;
-}
-
-.workspace-title {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.4);
-}
-
-.new-page-btn {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 2rem;
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.new-page-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-.pages-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.page-item {
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.9rem;
-  transition: all 0.2s ease;
-}
-
-.page-item:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
-}
-
-.page-item.active {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  font-weight: 500;
-}
+/* ================= EDITOR ================= */
 .editor {
   flex: 1;
   padding: 6rem 10% 4rem;
