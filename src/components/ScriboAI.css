@@ -39,3 +39,32 @@
 .get-started-btn:active {
   transform: translateY(-2px);
 }
+.home_btn {
+  position: absolute;
+  top: 7rem; /* Shifted down to clear the navbar */
+  left: 3rem;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home_btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateX(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
