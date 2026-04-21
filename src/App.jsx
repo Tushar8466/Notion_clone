@@ -18,7 +18,7 @@ function Home() {
     return (
     <>
       <div className="hero-section">
-        <HomePageBot />
+        {/* <HomePageBot /> */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
           <LineWaves
             speed={0.3}
