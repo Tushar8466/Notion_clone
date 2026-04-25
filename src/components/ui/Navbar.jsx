@@ -8,12 +8,13 @@ function Navbar() {
             <div className='brand-section'>
                 <img src={Logo} alt="Scribo Logo" className="logo-img" />
             </div>
-            
+
             <div className='navbar-container'>
                 <ul className='navbar'>
                     <Link to="/" className='nav-item'>Home</Link>
                     <Link to="/dashboard" className='nav-item'>Workspace</Link>
-                    <li className='nav-item'>Contact</li>
+                    <Link to="/team" className='nav-item'>Team</Link>
+                    <Link to="/contact" className='nav-item'>Contact</Link>
                     <Link to="/scriboai" className='nav-item'>ScriboAI</Link>
                     <Link className='nav-item' to="/reminders">Reminders</Link>
                 </ul>
