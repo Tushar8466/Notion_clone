@@ -1,16 +1,18 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
-.title-style{
+
+.title-style {
     height: 100vh;
     background-color: black;
     text-align: center;
 }
+
 .titel {
     font-size: 34px;
     font-weight: 600;
     margin-bottom: 20px;
-    
+
 }

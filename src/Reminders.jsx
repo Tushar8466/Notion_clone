@@ -25,8 +25,8 @@ function Reminders() {
           loopDelay={0}
         />
         <p className="text-zinc-400 text-[20px]">Stay on top of your tasks</p>
-        <button 
-          className="btn-primary cursor-pointer" 
+        <button
+          className="btn-primary cursor-pointer"
           onClick={() => navigate('/todo')}
         >
           Get Started

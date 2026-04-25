@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Waves from "./components/ui/Waves";
+import Shuffle from "./components/ui/Shuffle";
+
+
 import { useNavigate } from 'react-router-dom'
 const LEVELS = ["Low", "Medium", "High"];
 
@@ -49,14 +53,43 @@ export default function TodoList() {
 
   return (
     <div style={styles.page}>
-      <div style={styles.card}>
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: 0 }}>
+        <Waves 
+          lineColor="rgba(255, 255, 255, 0.15)"
+          backgroundColor="rgba(10, 10, 10, 1)"
+          waveSpeedX={0.015}
+          waveSpeedY={0.005}
+          waveAmpX={40}
+          waveAmpY={20}
+          xGap={12}
+          yGap={36}
+          friction={0.925}
+          tension={0.005}
+        />
+      </div>
+      <div style={{...styles.card, position: 'relative', zIndex: 1}}>
 
         {/* Header */}
         <div style={styles.header}>
           <div style={styles.headerLeft}>
             <span style={styles.logo}>✅</span>
             <div>
-              <h1 style={styles.title}>My Tasks</h1>
+              <Shuffle
+                text="Tasks"
+                shuffleDirection="right"
+                duration={0.35}
+                animationMode="evenodd"
+                shuffleTimes={1}
+                ease="power3.out"
+                stagger={0.03}
+                threshold={0.1}
+                triggerOnce={true}
+                triggerOnHover
+                respectReducedMotion={true}
+                loop={false}
+                loopDelay={0}
+                style={styles.title}
+              />
               <p style={styles.subtitle}>Stay organised, get things done.</p>
             </div>
           </div>
@@ -223,7 +256,7 @@ const styles = {
   page: {
     minHeight: "100vh",
     width: "100%",
-    background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)",
+    background: "transparent",
     display: "flex",
     justifyContent: "center",
     alignItems: "flex-start",
@@ -231,13 +264,15 @@ const styles = {
     fontFamily: "'DM Mono', monospace",
   },
   card: {
-    background: "#1a1a1a",
-    borderRadius: 20,
-    boxShadow: "0 12px 60px rgba(0,0,0,0.5)",
+    background: "rgba(20, 20, 20, 0.4)",
+    backdropFilter: "blur(20px)",
+    WebkitBackdropFilter: "blur(20px)",
+    borderRadius: 24,
+    boxShadow: "0 12px 60px rgba(0,0,0,0.6)",
     padding: "52px 60px",
     width: "100%",
     maxWidth: 1200,
-    border: "1.5px solid #333333",
+    border: "1px solid rgba(255, 255, 255, 0.1)",
   },
   header: {
     display: "flex",
@@ -257,11 +292,11 @@ const styles = {
   logo: { fontSize: 48 },
   title: {
     margin: 0,
-    fontFamily: "'Lora', serif",
-    fontSize: 38,
-    fontWeight: 700,
+    fontFamily: "'Press Start 2P', cursive",
+    fontSize: 28,
     color: "#ffffff",
-    letterSpacing: -0.5,
+    letterSpacing: "1px",
+    textTransform: "uppercase",
   },
   subtitle: {
     margin: "5px 0 0",
@@ -277,8 +312,8 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    background: "#2a2a2a",
-    border: "1.5px solid #444444",
+    background: "rgba(255, 255, 255, 0.03)",
+    border: "1px solid rgba(255, 255, 255, 0.08)",
     borderRadius: 14,
     padding: "14px 28px",
     minWidth: 90,
@@ -309,8 +344,8 @@ const styles = {
     borderRadius: 10,
     fontSize: 17,
     fontFamily: "'DM Mono', monospace",
-    background: "#2a2a2a",
-    color: "#ffffff",
+    background: "rgba(255, 255, 255, 0.05)",
+    border: "1px solid rgba(255, 255, 255, 0.1)",
   },
   select: {
     flex: 0.6,
@@ -319,8 +354,8 @@ const styles = {
     borderRadius: 10,
     fontSize: 17,
     fontFamily: "'DM Mono', monospace",
-    background: "#2a2a2a",
-    color: "#ffffff",
+    background: "rgba(255, 255, 255, 0.05)",
+    border: "1px solid rgba(255, 255, 255, 0.1)",
     cursor: "pointer",
   },
   addBtn: {
@@ -358,9 +393,9 @@ const styles = {
     alignItems: "center",
     gap: 16,
     padding: "22px 22px",
-    background: "#2a2a2a",
+    background: "rgba(255, 255, 255, 0.03)",
     borderRadius: 12,
-    border: "1px solid #3a3a3a",
+    border: "1px solid rgba(255, 255, 255, 0.05)",
     transition: "opacity 0.2s",
   },
   checkbox: {
