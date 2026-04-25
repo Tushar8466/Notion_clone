@@ -16,6 +16,8 @@ import HomePageBot from './components/ui/HomePageBot'
 import AI from './components/AI'
 import Reminders from './Reminders'
 import Todo from './Todo'
+import Contact from './components/pages/Contact'
+import Team from './components/pages/Team'
 
 function Home() {
     return (
@@ -98,7 +100,7 @@ function App() {
   const location = useLocation()
   return (
     <>
-      {location.pathname === "/" && <Navbar />}
+      {(location.pathname === "/" || location.pathname === "/contact" || location.pathname === "/team") && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -107,6 +109,8 @@ function App() {
         <Route path="/ai" element={<AI />} />
         <Route path="/reminders" element={<Reminders />} />
         <Route path='/todo' element={<Todo/>}></Route>
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
     </>
   )
