@@ -1,49 +1,48 @@
-# Scribo — Build your second brain
+# 🚀 Notion Clone - Premium Productivity Suite
 
-Scribo is a premium, high-performance workspace clone inspired by Notion. It features a cinematic dark-themed interface, glassmorphic UI components, and fluid WebGL-powered animations.
+A high-end, aesthetically pleasing productivity application inspired by Notion, featuring advanced glassmorphism, fluid animations, and a retro-premium aesthetic.
 
-![Scribo Preview](./hero.png)
+![Status](https://img.shields.io/badge/Status-Development-orange)
+![Tech](https://img.shields.io/badge/Stack-React%20%7C%20Vite%20%7C%20Three.js-blue)
 
-## ✨ Features
+## ✨ Key Features
 
-- **Cinematic Hero Section**: Interactive `LineWaves` WebGL background powered by `ogl`.
-- **Glassmorphic Navigation**: High-end, translucent navbar with blur effects and smooth hovers.
-- **Spotlight Cards**: Interactive feature cards with dynamic mouse-following glow effects.
-- **Premium Aesthetics**: Carefully curated HSL color palette and modern typography (Inter).
-- **Responsive Design**: Fully optimized for a seamless experience across all screen sizes.
+### 🎨 Stunning Visuals
+- **Glassmorphism UI:** Advanced backdrop blurs and semi-transparent layers for a modern, deep look.
+- **Dynamic Backgrounds:** Custom Three.js shaders including `Waves`, `Hyperspeed`, and `ColorBends`.
+- **Retro-Premium Aesthetic:** A unique blend of modern UI patterns with pixel-art typography and terminal-inspired elements.
 
-## 🚀 Tech Stack
+### 📝 Productivity Modules
+- **Dynamic Tasks:** A fully functional Todo list with priority levels (Low, Medium, High).
+- **Reminders:** Beautifully styled reminder cards with shuffle text animations.
+- **Interactive Components:** Smooth transitions and micro-interactions powered by GSAP.
 
-- **Framework**: [React 19](https://react.dev/)
-- **Bundler**: [Vite 8](https://vitejs.dev/)
-- **Graphics**: [OGL](https://github.com/o-g-l/ogl) (WebGL) & [GSAP](https://gsap.com/)
-- **Styling**: Vanilla CSS (Modern CSS Variables & Glassmorphism)
-- **Typography**: [Inter](https://rsms.me/inter/)
+### 🛠 Tech Stack
+- **Frontend:** React 19 + Vite
+- **Animations:** GSAP (GreenSock Animation Platform) + `@gsap/react`
+- **Graphics:** Three.js for interactive background shaders
+- **Icons:** Lucide React
+- **Styling:** Vanilla CSS + TailwindCSS integration
 
-## 🛠️ Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or higher)
+- Node.js (Latest LTS version recommended)
 - npm or yarn
 
 ### Installation
-
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Tushar8466/Notion_clone.git
    ```
-
 2. Navigate to the project directory:
    ```bash
    cd Notion_clone
    ```
-
 3. Install dependencies:
    ```bash
    npm install
    ```
-
 4. Start the development server:
    ```bash
    npm run dev
@@ -51,22 +50,10 @@ Scribo is a premium, high-performance workspace clone inspired by Notion. It fea
 
 ## 📂 Project Structure
 
-```text
-src/
-├── components/
-│   ├── ui/
-│   │   ├── Navbar.jsx      # Glassmorphic header
-│   │   ├── CardProps.jsx   # Spotlight/Hover logic
-│   └── Hero.jsx            # LineWaves WebGL component
-├── App.jsx                 # Core landing page layout
-├── index.css               # Design tokens & global styles
-└── main.jsx                # Entry point
-```
+- `src/components/ui/` - Premium interactive UI components (Waves, Shuffle, HyperSpeed, etc.)
+- `src/Reminders.jsx` - The reminders module.
+- `src/Todo.jsx` - The task management module.
+- `src/index.css` - Global design tokens and core styling.
 
 ## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-Built with ⚡ by [Your Name/Github]
+MIT License - feel free to use this project for your own inspiration!
