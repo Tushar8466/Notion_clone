@@ -15,6 +15,7 @@ import ScriboAI from './components/ScriboAI'
 import HomePageBot from './components/ui/HomePageBot'
 import AI from './components/AI'
 import Reminders from './Reminders'
+import Todo from './Todo'
 
 function Home() {
     return (
@@ -105,6 +106,7 @@ function App() {
         <Route path="/scriboai" element={<ScriboAI />} />
         <Route path="/ai" element={<AI />} />
         <Route path="/reminders" element={<Reminders />} />
+        <Route path='/todo' element={<Todo/>}></Route>
       </Routes>
     </>
   )
